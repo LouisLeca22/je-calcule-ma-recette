@@ -1,0 +1,714 @@
+/*----------------------------------TEMPLATE----------------------------------*/
+/*-------------------GLOBAL---------------------------*/
+:root {
+  --main-bg-color: #fFF;
+  --secondary-bg-color: #f1f1f1 ;
+  --main-header-color: #59b2e2;
+  --secondary-header-color: #0f91d8 ;
+  --main-text-color: #5c6f7a;
+  --secondary-text-color: #40494d;
+}
+
+*{
+  margin: 0 !important;
+}
+
+body{
+  background-color: #fff8f8;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: Poppins !important;
+}
+
+p, a{
+  font-family: Roboto !important;
+}
+
+.hov-bg{
+  transition: background 800ms ease-in-out;
+}
+
+.hov-bg:hover{
+  background: var(--secondary-bg-color);
+}
+
+
+
+/*--------------------NAVIGATION------------------------- */
+
+.navbar{
+  padding-bottom: 5px !important;
+}
+
+.navbar > .branding > h4{
+  font-family: Poppins !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.1rem !important;
+  font-size: 2vw !important;
+  padding-top: 2px !important;
+  padding-bottom: 10px !important;
+}
+
+
+
+/*--------------------------MAIN----------------------------*/
+
+/*TABS */
+/*menu*/
+.tabs > .tab > .tab-link {
+  color: var(--main-header-color) !important;
+  text-transform: capitalize !important;
+  transition: color 200ms ease-in-out !important;
+  font-weight: 900;
+}
+
+.tabs > .tab > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tabs > .tab > a > svg {
+  flex: 2;
+  padding-left: 15px;
+}
+
+.tabs > .tab > a > span {
+  flex: 6;
+  font-size: 2vw; 
+}
+
+.tabs .tab > a >
+
+.tabs > .tab > .tab-link:hover {
+  color: var(--secondary-header-color) !important;
+  font-weight: 900;
+}
+
+ .tab > a.active{
+  background-color: #d3e4f0 !important;
+}
+
+.indicator{
+  background-color: var(--secondary-header-color) !important;
+}
+
+#commandSVGMed{
+  fill: var(--main-header-color);
+  width: 45px;
+  height: 45px;
+  
+}
+
+li:hover #commandSVGMed{
+  fill: var(--secondary-header-color) !important;
+}
+
+#recipeSVGMed{
+  fill: var(--main-header-color);
+  width: 45px;
+  height: 45px;
+}
+
+li:hover #recipeSVGMed{
+  fill: var(--secondary-header-color) !important;
+}
+
+#processSVGMed{
+  fill: var(--main-header-color);
+  width: 45px;
+  height: 45px;
+  stroke: var(--main-header-color);
+  stroke-width: 30;                                                                   
+}
+
+li:hover #processSVGMed{
+  fill: var(--secondary-header-color) !important;
+  stroke: var(--secondary-header-color);
+}
+
+
+/*content tabs*/
+.carousel{
+  height: 85vh !important;
+}
+
+/*COLLECTION*/
+/*menu*/
+.navbar > .nav > .nav-item{
+  font-family: Poppins !important;
+  font-size: 2.5vw !important;
+  display: inline-block !important;
+  padding: 0 20px 0 20px !important;
+}
+
+.navbar > .nav > .nav-item > a{
+  color: var(--main-header-color) !important;
+  font-weight: 900;
+  transition: color 200ms ease-in-out !important;
+}
+
+.navbar > .nav > .nav-item:hover > a{
+  color: var(--secondary-header-color) !important;
+}
+
+.collection-item:first-child{
+  height: 90vh !important;
+}
+
+.collection-item:nth-child(2){
+  height:100vh !important;
+}
+
+.collection-item:nth-child(3){
+  height:100vh !important;
+}
+
+#commandSVGSmall{
+  fill: var(--main-header-color);
+  width: 30px;
+  height: 30px;
+}
+
+li:hover #commandSVGSmall{
+  fill: var(--secondary-header-color) !important;
+}
+
+#recipeSVGSmall{
+  fill: var(--main-header-color);
+  width: 30px;
+  height: 30px;
+}
+
+li:hover #recipeSVGSmall{
+  fill: var(--secondary-header-color) !important;
+}
+
+#processSVGSmall{
+  fill: var(--main-header-color);
+  width: 30px;
+  height: 30px;
+  stroke: var(--main-header-color);
+  stroke-width: 30;
+}
+
+li:hover #processSVGSmall{
+  fill: var(--secondary-header-color) !important;
+  stroke: var(--secondary-header-color);
+}
+
+
+/*Content Collection*/
+.collection-btn-next{
+  margin-top: 40px !important;
+  display: flex;
+  float: right;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: var(--main-header-color);
+  padding-left: 2px;
+  
+}
+
+.collection-btn-next:hover{
+  background-color: var(--secondary-header-color);
+}
+
+.collection-btn-next div{
+  flex: 5;
+  color: #fff;
+}
+
+.collection-btn-next svg{
+  flex:1;
+  fill: #fff !important;
+}
+
+
+.collection-btn-prev{
+  margin-top: 40px !important;
+  display: flex;
+  float: left;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: var(--main-text-color);
+  padding-left: 2px;
+  
+}
+
+.collection-btn-prev:hover{
+  background-color: var(--secondary-text-color);
+}
+
+.collection-btn-prev div{
+  flex: 5;
+  color: #fff;
+}
+
+.collection-btn-prev svg{
+  flex:1;
+  fill: #fff !important;
+}
+
+/*ACCORDION*/
+/*Menu*/
+
+.collapsible-header {
+  color: var(--main-header-color) !important;
+  transition: color 200ms ease-in-out;
+}
+
+.collapsible-header h6{
+	padding-left: 30px; 
+	padding-top: 5px;
+	font-weight: 900;
+	font-size: 4vw;
+}
+
+
+.collapsible-header:hover{
+  color: var(--secondary-header-color) !important;
+}
+
+.collapsible > li.active > .collapsible-header{
+  background-color: #d3e4f0 !important;
+}
+
+
+#commandSVGMobile{
+  fill: var(--main-header-color) !important;
+  width: 30px;
+  height: 30px;  
+}
+
+li:hover #commandSVGMobile{
+  fill: var(--secondary-header-color);
+}
+
+#recipeSVGMobile{
+  fill: var(--main-header-color);
+  width: 30px;
+  height: 30px;
+}
+
+li:hover #recipeSVGMobile{
+  fill: var(--secondary-header-color) !important;
+}
+
+#processSVGMobile{
+  fill: var(--main-header-color);
+  width: 30px;
+  height: 30px;
+  stroke: var(--main-header-color);
+  stroke-width: 30;     
+                                                         
+}
+
+li:hover #processSVGMobile{
+  fill: var(--secondary-header-color) !important;
+  stroke: var(--secondary-header-color);
+}
+
+
+/*content accordion*/
+.collapsible-body{
+  height: 70vh !important;
+}
+
+
+
+/*Media queries*/
+
+/*Mobile*/
+
+/*Navigation */
+
+@media(max-width: 600px){
+  .navbar > .branding > h4{
+    letter-spacing: 0.1rem !important;
+    font-size: 5vw !important;
+    padding: 10px !important;
+  }
+
+  .navbar > .nav > .nav-item{
+    font-size: 3vw !important;
+  }
+
+  .collapsible-body{
+    overflow: scroll;
+  }
+}
+
+
+
+/*------------------------------FUNCTIONS--------------------------------*/
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto !important;
+    width: 90% !important;    
+    justify-content: center;                                                   
+}
+
+/*Input numbers */
+
+
+.wan-spinner{
+  margin-top: 10px !important;
+  border: none !important;
+  display: inline-block;
+}
+
+.wan-spinner .minus,
+.wan-spinner .plus,
+.wan-spinner input {
+height: 30px !important;
+float: left;
+text-align: center;
+line-height: 1em;
+text-align: center;
+}
+
+.wan-spinner .plus{
+  width: 30px ;
+  background-color: var(--secondary-header-color);
+  color: #fff ;
+  font-size: 24px;
+  padding-top: 3px !important;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.wan-spinner .minus{
+  width: 30px ;
+  background-color: var(--main-text-color);
+  color: #fff;
+  font-size: 24px;
+  padding-top: 3px !important;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+input{
+  border-bottom: 1px solid var(--main-header-color) !important;
+}
+
+input:focus{
+  border-bottom: 2px solid var(--secondary-header-color) !important;
+}
+
+input:hover{
+  border-bottom: 2px solid var(--secondary-header-color) !important;
+}
+
+/*input select*/
+
+.select-wrapper input.select-dropdown{
+  text-align: center!important;
+  border-bottom: 1px solid var(--main-header-color) !important;
+}
+
+.select-wrapper input.select-dropdown:focus {
+  border-bottom: none;
+}
+
+.select-wrapper input.select-dropdown:hover {
+  border-bottom: 2px solid var(--secondary-header-color) !important;
+}
+
+.dropdown-content.select-dropdown li span {
+  color: var(--main-text-color) !important;
+  font-size: 1rem !important;
+  text-align: center;
+}
+
+/*Title*/
+
+.column-title{
+  height: 50px;   
+  font-size: 1.5vw;
+  border-bottom: 1px dotted var(--main-text-color);
+  border-right: 1px dotted  var(--secondary-text-color);
+}
+
+.column-title div{
+  padding: 5px !important;
+}
+
+.box-title{
+  flex:1;
+  padding: 2px;
+  font-size: 1.5vw !important;
+  margin-top: 15px !important;
+}
+
+.box-empty{
+  flex: 3;
+}
+
+.box-result{
+  font-weight: 900;
+  font-size: 1.5vw;
+  flex: 5;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.result-command, .result-recipe, .result-process{
+  flex: 1;
+}
+
+/*rows  */
+.container-row{
+  flex: 1;   
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;  
+}
+
+
+/*boxes*/
+
+.box-qty{
+  flex: 2;
+}
+
+.box-type{
+  flex: 5;
+
+}
+
+.box-weight{
+  flex: 3;
+
+}
+
+.box-bread{
+  flex: 2;
+
+}
+
+.box-ingredient{
+  flex: 4;
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.ingredient-title{
+  flex: 10;
+  text-align: center;
+}
+
+.ingredient-icon{
+  flex: 4;
+  text-align: center;
+}
+
+
+
+.box-ingredient-qty{
+  flex: 1;
+
+}
+
+
+.box-ingredient-total{
+  flex: 1;
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+
+.box-variable{
+  flex: 12;
+  height: 50px;
+}
+
+
+ 
+.box-operator{
+  flex: 7;
+  font-size: 2vw;
+  height: 50px;
+
+}
+
+.box-coef{
+  font-size: 2vw;
+  font-weight: 900;
+  flex: 4;
+  height: 50px;
+}
+
+
+/* SVG */
+
+.flourSVGLarge, .waterSVGLarge, .saltSVGLarge, .yeastSVGLarge, .doughSVGLarge,
+.flourSVGMed, .waterSVGMed, .saltSVGMed, .yeastSVGMed, .doughSVGMed,
+.flourSVGSmall, .waterSVGSmall, .saltSVGSmall, .yeastSVGSmall, .doughSVGSmall
+{
+padding-left: 10px;                     
+height: 60px;
+width: 60px;
+stroke-width: 5;
+stroke: var(--secondary-header-color);
+fill: transparent !important;
+transition: fill ease 1s, stroke-dashoffset 2s linear 1s;
+}
+
+.flourSVGLarge, .flourSVGMed, .flourSVGSmall{
+  stroke-dasharray: 4756.9677734375px;
+  stroke-dashoffset: -4756.9677734375px;
+}
+
+.waterSVGLarge, .waterSVGMed, .waterSVGSmall{
+  stroke-dasharray: 2880.2744140625px;
+  stroke-dashoffset: -2880.2744140625px;
+}
+
+.saltSVGLarge, .saltSVGMed, .saltSVGSmall{
+  stroke-dasharray: 3294.4951705932617px;
+  stroke-dashoffset: -3294.4951705932617px;
+}
+
+.yeastSVGLarge, .yeastSVGMed, .yeastSVGSmall{
+  stroke-dasharray: 4582.28190612793px;
+  stroke-dashoffset: -4582.28190612793px;
+}
+
+.doughSVGLarge, .doughSVGMed, .doughSVGSmall{
+  stroke-dasharray: 5801.642578125;
+  stroke-dashoffset: -5801.642578125;
+}
+
+
+.flourSVGLarge.checked, .waterSVGLarge.checked, .saltSVGLarge.checked, .yeastSVGLarge.checked, .doughSVGLarge.checked,
+.flourSVGMed.checked, .waterSVGMed.checked, .saltSVGMed.checked, .yeastSVGMed.checked, .doughSVGMed.checked,
+.flourSVGSmall.checked, .waterSVGSmall.checked, .saltSVGSmall.checked, .yeastSVGSmall.checked, .doughSVGSmall.checked
+{
+stroke-dashoffset: 0px;
+fill: var(--main-header-color) !important;
+transition: stroke-dashoffset 2s linear , fill 1s ease 2s;
+}
+
+
+@media(max-width: 600px){
+  .wrapper{
+    flex-direction: column;
+                                                  
+  }
+
+  .column-title{
+    display: none;
+  }
+
+  .box-title{
+    display: none;
+  }
+  
+  .box-empty{
+    display: none;
+  }
+  
+  .box-result{
+    flex: 5;
+    font-size: 5vw;
+   
+  }
+  
+  .result-command, .result-recipe, .result-process{
+    flex: 1;
+  }
+
+  .container-row{
+    flex: 1;   
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+
+  .box-qty{
+    flex: 1;
+  }
+  
+  .box-type{
+    flex: 1;
+  
+  }
+  
+  .box-weight{
+    flex: 1;
+  
+  }
+  
+  .box-bread{
+    flex: 1;
+  
+  }
+  
+  .box-ingredient{
+    flex: 1
+  }
+  
+  .ingredient-title{
+    display: none;
+  }
+  
+  .ingredient-icon{
+    flex: 1;
+  }
+  
+  
+  
+  .box-ingredient-qty{
+    flex: 1;
+  
+  }
+  
+  
+  .box-ingredient-total{
+    flex: 1;
+   
+  }
+  
+  
+  .box-variable{
+    flex: 1;
+  }
+  
+  
+   
+  .box-operator{
+    flex: 1;
+  
+  }
+  
+  .box-coef{
+    flex: 1;
+  }
+  
+  .block{
+    display: none;
+  }
+
+}
